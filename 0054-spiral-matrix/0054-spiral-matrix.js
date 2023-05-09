@@ -29,7 +29,6 @@ var spiralOrder = function(matrix) {
         endR--;
     
         for(let j = endR; j >= startR; j--){
-        
             result.push(matrix[j][startC])
         }
         startC++;
