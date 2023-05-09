@@ -9,9 +9,6 @@ var spiralOrder = function(matrix) {
     let startC = 0;
     let endC = matrix[0].length -1;
     
-    if(matrix.length === 0) 
-        return result
-    
     while (startR <= endR && startC <= endC){
         
         for (let i=startC; i <= endC; i++){
