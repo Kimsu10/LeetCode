@@ -13,26 +13,26 @@ var spiralOrder = function(matrix) {
         return result
     
     while (startR <= endR && startC <= endC){
-        //오른쪽
+        
         for (let i=startC; i <= endC; i++){
             result.push(matrix[startR][i])
         }
         startR++;
-        //아래
+        
         for (let j = startR; j <= endR; j++){
             result.push(matrix[j][endC])
         }
         endC--;
         
     if(startR <= endR && startC <= endC){
-        //왼쪽
+        
         for(let i = endC; i >= startC; i--){
             result.push(matrix[endR][i])
         }
         endR--;
     
         for(let j = endR; j >= startR; j--){
-            //위
+        
             result.push(matrix[j][startC])
         }
         startC++;
