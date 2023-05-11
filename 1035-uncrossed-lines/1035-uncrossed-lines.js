@@ -4,11 +4,8 @@
  * @return {number}
  */
 var maxUncrossedLines = function(nums1, nums2) {
-  if (nums1.length === 0 || nums2.length === 0) {
-    return 0;
-  }
-  
   let arr = new Array(nums1.length + 1);
+    
   for (let i = 0; i < arr.length; i++) {
     arr[i] = new Array(nums2.length + 1).fill(0);
   }
